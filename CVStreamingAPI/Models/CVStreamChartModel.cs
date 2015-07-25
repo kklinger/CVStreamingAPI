@@ -10,5 +10,6 @@ namespace CVStreamingAPI.Models
     {
         public string name;
         public DateTime now;
+        public string count;
     }
 }

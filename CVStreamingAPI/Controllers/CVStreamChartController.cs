@@ -9,16 +9,15 @@ namespace CVStreamingAPI.Controllers
 {
     public class CVStreamChartController : Controller
     {
-        //
-        // GET: /Test1/
+        // GET: example /CVStreamChart/Index/100000
 
         public ActionResult Index(string id)
         {
             var myModel = new CVStreamChart();
-            myModel.name = "KlingerDev " + id;
+            myModel.name = "Dreamforce '15 Campaign";
+            myModel.count = id;
             myModel.now = DateTime.Now;
             return View(myModel);
         }
-
     }
 }

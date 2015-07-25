@@ -3,6 +3,9 @@
 @{
     ViewBag.Title = "CVStreamChart";
 }
+<h2>@Model.name</h2>
+<!--  <img src="http://www.jlion.com:80//tools/Thermometer.aspx?MIN=0&MAX=200000&VT=1&T=@Model.name&IV=@Model.count&M=1&SC=0&CS=6&CI=en-US&TH=1" style="border: solid 1px black;" alt="Thermometer+Chart" title="Thermometer+Chart" width="240" height="425" />
+-->
+<img src="http://www.jlion.com:80//tools/Thermometer.aspx?MIN=0&MAX=200000&VT=1&T= &IV=@Model.count&M=1&SC=0&CS=6&CI=en-US&TH=1" style="border: solid 1px black;" alt="" title="" width="240" height="425" />
 
-<h2>Index</h2>
-@Model.name @Model.now
+<p>last updated - @Model.now</p>
